@@ -6,7 +6,20 @@ public class CreditCard {
     private boolean blocked;
     private final Account account;
     private double debt;
+    private String id;
 
+    public CreditCard() {
+        this.id = "random_string";
+    }
+    
+    pbulic CreditCard(String id){
+        this.id = id;
+    }
+    
+    public String getId(){
+        return id;
+    }
+    
     public CreditCard(Account account){
         this.account = account;
     }
